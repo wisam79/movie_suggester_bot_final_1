@@ -1,0 +1,46 @@
+# Movie Suggester Bot Project
+
+- [x] Initialize project structure (folders and basic files).
+- [x] Implement genre suggestion feature:
+    - [x] Define `/genre` command handler.
+    - [x] Create inline keyboard for genre selection.
+    - [x] Implement callback handler for genre selection.
+    - [ ] Fetch and display movie suggestion (placeholder initially).
+- [x] Implement daily suggestion feature:
+    - [x] Inform user about limitations on scheduled tasks.
+    - [x] Implement a command to trigger a "daily" suggestion manually as an alternative.
+    - [ ] (Optional/Alternative) Explore ways to simulate daily suggestions if possible within constraints.
+- [x] Implement favorites feature:
+    - [x] Define `/favorites` command handler.
+    - [x] Implement "Add to Favorites" button/callback (placeholder logic).
+    - [x] Implement "Remove from Favorites" functionality (placeholder logic).
+    - [x] Display user's favorite list (placeholder storage).
+- [x] Implement search feature:
+    - [x] Define handler for user messages (potential movie titles/keywords).
+    - [x] Implement search logic (placeholder).
+    - [x] Display search results (placeholder).
+- [x] Integrate TMDb API:
+    - [x] Create TMDb service module (`tmdb.py`).
+    - [x] Implement function to fetch genres.
+    - [x] Implement function to fetch movie suggestions by genre.
+    - [x] Implement function to search movies.
+    - [x] Implement function to get movie details.
+    - [x] Replace placeholder logic with actual API calls (Genre, Daily, Favorites, Search).
+- [x] Setup database (SQLite/JSON):
+    - [x] Create database service module (`database.py`).
+    - [x] Implement functions to manage user favorites (add, remove, list).
+    - [ ] Implement functions to manage daily suggestion subscribers (if applicable - skipped as daily is manual).
+    - [x] Initialize database schema.
+- [x] Validate features and test bot:
+    - [x] Test genre suggestion.
+    - [x] Test daily suggestion (manual trigger).
+    - [x] Test favorites management.
+    - [x] Test search functionality.
+    - [x] Test overall bot interaction and error handling.
+- [x] Prepare final project files:
+    - [x] Finalize `README.md` with setup and usage instructions.
+    - [x] Ensure `requirements.txt` is complete.
+    - [x] Ensure API keys are handled securely (e.g., via `.env` or config, not hardcoded).
+- [x] Report and send project to user:
+    - [x] Package the project files (e.g., zip archive).
+    - [x] Send the package and a summary message to the user.
